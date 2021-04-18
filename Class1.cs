@@ -48,13 +48,13 @@ namespace ConsoleApp6
             
 
             
-            lineCompare(line1, line2);
+            lineCompare(line1, line2); ////cOMPARISION OF TWO LINES
 
         } 
-        private static void lineCompare(double line1 , double line2)
+          private static void lineCompare(double line1 , double line2)
         {
             double Result = line1.CompareTo(line2);
-            Console.WriteLine(Result);
+            Console.WriteLine(Result); //// RESULTS BASED UPON LENGTH
             if (Result == 0)
             {
                 Console.WriteLine(" Both Lines Are Equal");
@@ -65,11 +65,10 @@ namespace ConsoleApp6
             }
             else
             {
-                Console.WriteLine("line 2 is less than line12 ");
+                Console.WriteLine("line 2 is less than line 1 ");
             }
         }
         
-
 
     }
 }
