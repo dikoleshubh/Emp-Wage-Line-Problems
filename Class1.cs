@@ -7,7 +7,7 @@ namespace ConsoleApp6
     class Cartecian
     {
         public static void CartecianR()
-        {
+        {////TAKING INPUT AS (X1,Y1) & (X2,Y2) FOR LINE 1
             Console.WriteLine("Enter the Co Ordinates x1");
             Console.ReadLine();
             int x = Convert.ToInt32(Console.ReadLine());
@@ -20,7 +20,7 @@ namespace ConsoleApp6
             Console.WriteLine("Enter the Co Ordinates Y2");
             Console.ReadLine();
             int b = Convert.ToInt32(Console.ReadLine());
-
+////TAKING INPUT AS (X1,Y1) & (X2,Y2) FOR LINE 2
             Console.WriteLine("Enter the Co Ordinates x1");
             Console.ReadLine();
             int x1 = Convert.ToInt32(Console.ReadLine());
@@ -33,42 +33,27 @@ namespace ConsoleApp6
             Console.WriteLine("Enter the Co Ordinates Y2");
             Console.ReadLine();
             int b1 = Convert.ToInt32(Console.ReadLine());
-
+            
+            //// Length of a Line = sqrt( (x2 - x1) ^ 2 + (y2- y1) ^ 2)
+            //// COMPUTATION
             int m = (a - x);
             int n = (b - y);
-            double v = Convert.ToDouble(m);
+            double v = Convert.ToDouble(m); ////CONVERSION TO DOUBLE
             double w = Convert.ToDouble(n);
             double line1 = Math.Sqrt(v + w);
             int m1 = (a1 - x1);
             int n1 = (b1 - y1);
-            double v1 = Convert.ToDouble(m1);
+            double v1 = Convert.ToDouble(m1); ////CONVERSION TO DOUBLE
             double w1 = Convert.ToDouble(n1);
-            double line2 = Math.Sqrt(v1 + w1);
+            double line2 = Math.Sqrt(v1 + w1); 
 
             
 
             
-            lineCompare(line1, line2);
+           
 
         } 
-        private static void lineCompare(double line1 , double line2)
-        {
-            double Result = line1.CompareTo(line2);
-            Console.WriteLine(Result);
-            if (Result == 0)
-            {
-                Console.WriteLine(" Both Lines Are Equal");
-            }
-            else if (Result < 0.0)
-            {
-                Console.WriteLine("line 1 is less than line 2 ");
-            }
-            else
-            {
-                Console.WriteLine("line 2 is less than line12 ");
-            }
-        }
-        
+      
 
 
     }
