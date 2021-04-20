@@ -5,8 +5,7 @@ using System.Text;
 namespace ConsoleApp6
 {
     class Cartecian
-    {
-        class Cartecian
+       
     {
         public static void CartecianR()
         {////TAKING INPUT AS (X1,Y1) & (X2,Y2) FOR LINE 1
@@ -71,7 +70,7 @@ namespace ConsoleApp6
             else
             {
                 Console.WriteLine("line 2 is less than line 1 ");
-            }
+         }
         }
         
 
